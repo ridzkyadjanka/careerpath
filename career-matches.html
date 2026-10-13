@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CareerPath — career guidance for undergraduate students." />
+  <title>Career matches · CareerPath</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="matches" data-shell="app" data-title="Career matches">
+  <div id="app">
+    <div class="page-head">
+      <p class="eyebrow">Explore your possibilities</p>
+      <h1>Find a path that fits you.</h1>
+      <p>Explore career responsibilities, skills, and practical next steps.</p>
+    </div>
+    <div class="notice" id="assessHint" hidden style="margin:0 0 20px">Take the <a class="link" href="assessment.html">career assessment</a> to see your interest alignment scores.</div>
+    <label class="sr-only" for="searchInput">Search careers</label>
+    <input class="input search" id="searchInput" type="search" placeholder="Search careers..." />
+    <div id="careerCards"></div>
+    <div class="card empty" id="noResults" hidden><h2>No careers found</h2><p>Try another keyword, such as “SQL” or “design”.</p></div>
+    <p class="footnote">Interest alignment uses a transparent preference score, not an AI prediction.</p>
+  </div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

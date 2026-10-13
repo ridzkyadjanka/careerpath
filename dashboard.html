@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CareerPath — career guidance for undergraduate students." />
+  <title>Dashboard · CareerPath</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="dashboard" data-shell="app" data-title="Dashboard">
+  <div id="app">
+    <div class="page-head">
+      <div class="page-head-row">
+        <p class="eyebrow">Your next chapter</p>
+        <span class="aside">A little progress, every day.</span>
+      </div>
+      <h1 id="greeting">Hi there, let’s find your direction. 👋</h1>
+      <p>Here’s a look at your career exploration journey.</p>
+    </div>
+    <section class="banner" id="banner">
+      <div><h2>Discover what makes you, you.</h2><p>Take a short assessment to explore your interests and strengths.</p></div>
+      <a class="btn btn-primary" href="assessment.html">Take assessment →</a>
+    </section>
+    <section class="stats">
+      <div class="card stat"><p class="label">Profile completeness</p><p class="value" id="statProfile">0%</p><small id="statProfileNote">Add your details to complete your profile</small></div>
+      <div class="card stat"><p class="label">Career matches</p><p class="value" id="statMatches">3</p><small>Career paths to explore</small></div>
+      <div class="card stat"><p class="label">Learning progress</p><p class="value" id="statLearning">0%</p><small>Build momentum, one skill at a time</small></div>
+    </section>
+    <section class="grid-dash">
+      <div class="card">
+        <div class="card-head"><h2>Your career possibilities</h2><a class="link" href="career-matches.html">View all →</a></div>
+        <div id="careerList"></div>
+        <p class="footnote">Interest alignment reflects your answers, not your hiring prospects.</p>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Your next steps</h2></div>
+        <div id="nextSteps"></div>
+        <p class="footnote">You don’t need to have it all figured out.</p>
+      </div>
+    </section>
+  </div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

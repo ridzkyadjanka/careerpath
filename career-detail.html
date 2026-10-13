@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CareerPath — career guidance for undergraduate students." />
+  <title>Career overview · CareerPath</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="career" data-shell="app" data-title="Career overview">
+  <div id="app">
+    <a class="back-small" href="career-matches.html">← Back to career matches</a>
+    <div class="page-head">
+      <h1 id="careerName">Career</h1>
+      <p id="careerTagline"></p>
+    </div>
+    <section class="detail-grid">
+      <div class="card detail">
+        <h2>What you could do</h2>
+        <p id="careerActivities"></p>
+        <h2>Skills to develop</h2>
+        <div class="chips" id="careerSkills"></div>
+        <h2>A practical first step</h2>
+        <p id="careerFirstStep"></p>
+      </div>
+      <div class="card detail">
+        <h2>Make a plan</h2>
+        <p>Start with the basics and build evidence of your skills through a project.</p>
+        <div class="stack">
+          <a class="btn btn-primary" href="learning-roadmap.html">Open learning roadmap →</a>
+          <button class="btn btn-outline btn-save" id="saveDetail">♡ Save this career</button>
+          <a class="link" href="cv-analyzer.html">Check your CV for this career →</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

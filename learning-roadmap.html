@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CareerPath — career guidance for undergraduate students." />
+  <title>Learning roadmap · CareerPath</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="roadmap" data-shell="app" data-title="Learning roadmap">
+  <div id="app">
+    <div class="page-head">
+      <p class="eyebrow">From possibility to progress</p>
+      <h1>Your learning roadmap.</h1>
+      <p>A practical foundation in analytical skills. Work at your own pace.</p>
+    </div>
+    <section class="banner">
+      <div><h2 id="rmTitle"></h2><p id="rmSubtitle"></p></div>
+      <span class="banner-count" id="rmCount">0 / 4 complete</span>
+    </section>
+    <div class="bar-track" role="presentation"><span id="rmBar" style="width:0"></span></div>
+    <div id="roadmapList"></div>
+  </div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

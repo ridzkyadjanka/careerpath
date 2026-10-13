@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CareerPath — career guidance for undergraduate students." />
+  <title>Start your workspace · CareerPath</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="start">
+  <div class="auth">
+    <section class="auth-panel">
+      <a href="index.html" class="logo"><span class="logo-mark">↗</span><span>Career <span class="accent">Path</span></span></a>
+      <div>
+        <p class="eyebrow">Your future, in focus</p>
+        <h1>Your next chapter.<br /><span>Your own direction.</span></h1>
+        <p>Discover your interests, explore careers, and turn possibilities into a practical plan.</p>
+      </div>
+      <small>Automated Career Guidance System for Undergraduate Students</small>
+    </section>
+    <section class="auth-form-wrap">
+      <form class="auth-form" id="startForm" novalidate>
+        <a href="index.html" class="logo"><span class="logo-mark">↗</span><span>Career <span class="accent">Path</span></span></a>
+        <br /><a href="index.html" class="back-link">← Back to home</a>
+        <h2>Start your personal workspace.</h2>
+        <p class="muted">No password needed. Your progress stays on this device.</p>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input class="input" id="name" name="name" placeholder="What should we call you?" autocomplete="given-name" required />
+        </div>
+        <div class="field">
+          <label for="field">Field of study</label>
+          <input class="input" id="field" name="field" placeholder="e.g. Information Technology" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create my workspace →</button>
+        <div class="notice">This is a device-local workspace, not an online account. Clearing browser data removes your saved progress. You can export a copy from My Profile.</div>
+        <a href="career-matches.html" class="explore-link">Explore without a profile →</a>
+      </form>
+    </section>
+  </div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

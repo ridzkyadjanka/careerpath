@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CareerPath — career guidance for undergraduate students." />
+  <title>My profile · CareerPath</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="profile" data-shell="app" data-title="My profile">
+  <div id="app">
+    <div class="page-head">
+      <p class="eyebrow">Your foundation</p>
+      <h1>A little more about you.</h1>
+      <p>Your background helps shape your career exploration.</p>
+    </div>
+    <form class="card" id="profileForm" style="max-width:800px">
+      <div class="form-grid">
+        <div class="field"><label for="p-name">Full name</label><input class="input" id="p-name" name="name" autocomplete="name" /></div>
+        <div class="field"><label for="p-uni">University</label><input class="input" id="p-uni" name="university" /></div>
+        <div class="field"><label for="p-field">Field of study</label><input class="input" id="p-field" name="field" placeholder="e.g. Information Technology" /></div>
+        <div class="field"><label for="p-year">Graduation year</label><input class="input" id="p-year" name="gradYear" inputmode="numeric" maxlength="4" placeholder="e.g. 2027" /></div>
+        <div class="field"><label for="p-skills">Skills</label><input class="input" id="p-skills" name="skills" placeholder="e.g. Excel, SQL, communication" /></div>
+        <div class="field"><label for="p-int">Career interests</label><input class="input" id="p-int" name="interests" placeholder="e.g. Data, technology, business" /></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Save profile →</button>
+      <div class="notice">Saved on this device only. Export your progress before switching devices.</div>
+      <div class="form-actions" style="margin-top:22px">
+        <button type="button" class="btn btn-outline" id="downloadBtn">Download my progress ↓</button>
+        <label class="btn-text" style="cursor:pointer">Import progress<input type="file" id="importInput" accept="application/json" hidden /></label>
+        <button type="button" class="btn-text btn-danger-text" id="deleteBtn">Delete my local data</button>
+      </div>
+    </form>
+  </div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CareerPath — career guidance for undergraduate students." />
+  <title>CV analyzer · CareerPath</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="cv" data-shell="app" data-title="CV analyzer">
+  <div id="app">
+    <div class="page-head">
+      <p class="eyebrow">Make your experience count</p>
+      <h1>Strengthen the story in your CV.</h1>
+      <p>Paste your CV text for a private, rule-based review. Nothing is uploaded.</p>
+    </div>
+    <section class="card">
+      <form id="cvForm">
+        <div class="field">
+          <label for="targetCareer">Target career</label>
+          <select class="select" id="targetCareer"></select>
+        </div>
+        <div class="field">
+          <label for="cvText">CV text</label>
+          <textarea class="textarea" id="cvText" placeholder="Paste your experience, projects, education, and skills. Remove personal contact details first."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Review my CV →</button>
+        <p class="disclaimer">This review checks keywords and document structure. It does not evaluate file layout, verify experience, or guarantee hiring outcomes.</p>
+      </form>
+      <div class="review" id="cvReview" hidden aria-live="polite"></div>
+    </section>
+  </div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
